@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Azure.ServiceBus" Version="5.1.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\M-K.Application\SmsMs.Application.csproj" />
+    <ProjectReference Include="..\M-KServiceBusResponseToClient\M_KShared.csproj" />
+    <ProjectReference Include="..\ServiceBusUtil\ServiceBusUtil.csproj" />
+    <ProjectReference Include="..\SmsMs.Common\SmsMs.Common.csproj" />
+  </ItemGroup>
+
+</Project>
